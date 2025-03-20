@@ -11,9 +11,7 @@ local screenGui = playerGui:FindFirstChild("NotificationGui") or Instance.new("S
 screenGui.Name = "NotificationGui"
 screenGui.Parent = playerGui
 
-local Notifications = {}
-
-function notify(text, duration)
+function Notification.new(text, duration)
 	local duration = duration or 3
 	local maxNotifications = 10
 	local centerY = 0.4
